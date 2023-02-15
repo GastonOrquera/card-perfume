@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9rem;
+}
+
+.container{
+    display: flex;
+    padding-right: 1rem;
+    background-color: rgba(255, 255, 255, 0.985);
+    max-width: max-content;
+    border-radius: .5rem;
+}
+
+.column{
+    display: flex;
+}
+
+.perfume{
+    width: 16rem;
+    border-bottom-left-radius: .5rem;
+    border-top-left-radius: .5rem;
+}
+
+.perfume-mobile{
+    display: none;
+}
+
+.container-dos{
+    display: flex;
+    flex-direction: column;
+    /* background-color: violet; */
+    padding: 1.4rem 1rem;
+    border-radius: .5rem;
+}
+
+.p-perfume{
+    font-size: .7rem;
+    padding-top: .5rem;
+    letter-spacing: 4px;
+    color: rgb(137, 137, 137);
+}
+
+.titulo-perfume{
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding: 1rem 0;
+    color: rgb(37, 37, 37);
+}
+
+.p-text{
+    font-size: .9rem;
+    color: rgb(137, 137, 137);
+}
+
+.caja-precio{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.p-precio{
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    font-weight: 900;
+    /* color: rgb(28, 61, 32); */
+    color: rgba(27, 77, 33, 0.948);
+}
+
+.p-tachado{
+    text-decoration: line-through;
+    font-size: .9rem;
+    color: rgb(137, 137, 137);
+}
+
+.bi-cart3{
+    background-color: yellow;
+}
+
+.p-cart{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(27, 77, 33, 0.948);
+    padding: .8rem .6rem;
+    color: rgba(255, 255, 255, 0.985);
+    text-align: center;
+    border-radius: .5rem;
+    font-size: .9rem;
+}
+
+.carrito{
+    width: .9rem;
+    margin-right: 1rem;
+}
+
+
+@media (max-width: 767px){
+
+body{
+    margin-top: 0;
+    padding: 1.4rem 1.4rem;
+}
+
+
+br{
+    display: none;
+}
+
+.perfume{
+    display: none;
+}
+
+    .perfume-mobile{
+        display: block;
+        width: 100%;
+        border-radius: 0;
+        border-top-right-radius: .5rem;
+        border-top-left-radius: .5rem;
+    }
+
+    .container{
+        padding-right: 0;
+    }
+
+    .column{
+        flex-direction: column;
+    }
+
+}
